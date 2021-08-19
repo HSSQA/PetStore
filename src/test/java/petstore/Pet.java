@@ -61,7 +61,9 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-
+                .body("name", is("Shailon"))
+                .body("category.name", is("Dog"))
+                .body("status", is("available"))
 
 
         ;

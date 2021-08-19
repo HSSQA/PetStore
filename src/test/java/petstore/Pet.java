@@ -25,7 +25,7 @@ public class Pet {
      }
 
      // Incluir - Creaye - Post
-    @Test (priority = 0)// Identifica o método ou função como m teste para o TestNG
+    @Test (priority = 1)// Identifica o método ou função como m teste para o TestNG
     public void incluirPet() throws IOException {
         String jsonBody = lerJson("db/pet1.json");
 
@@ -44,14 +44,15 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Shailon"))
                 .body("status", is("available"))
-                .body("category.name", is("Dog"))
-                .body("tags.name", contains("sta"))
+                .body("category.name", is("XT01ABS4OR"))
+                .body("tags.name", contains("engine"))
         ;
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void consultarPet(){
         String petID = "19723541404";
+        String token =
 
         given()
                 .contentType("application/json")
@@ -62,11 +63,14 @@ public class Pet {
                 .log().all()
                 .statusCode(200)
                 .body("name", is("Shailon"))
-                .body("category.name", is("Dog"))
+                .body("category.name", is("XT01ABS4OR"))
                 .body("status", is("available"))
-
+        .extract()
+                .path("category.name")
 
         ;
+        System.out.println("O token é " + token);
+
 
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-19T03:53:56" hostname="YMN000857" time="3.088">
+<testsuite name="petstore.Pet" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-19T04:09:08" hostname="YMN000857" time="3.159">
   <properties/>
-  <testcase name="consultarPet" classname="petstore.Pet" time="2.293"/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="0.79"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="2.346"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="0.809"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://petstore.swagger.io/v2/pet/19723541404
 Proxy:			<none>
@@ -16,7 +16,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 19 Aug 2021 03:53:58 GMT
+Date: Thu, 19 Aug 2021 04:09:10 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -29,7 +29,7 @@ Server: Jetty(9.2.9.v20150224)
     "id": 19723541404,
     "category": {
         "id": 1,
-        "name": "Dog"
+        "name": "XT01ABS4OR"
     },
     "name": "Shailon",
     "photoUrls": [
@@ -37,12 +37,13 @@ Server: Jetty(9.2.9.v20150224)
     ],
     "tags": [
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 202108191,
+            "name": "engine"
         }
     ],
     "status": "available"
 }
+O token Ã© XT01ABS4OR
 Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -59,7 +60,7 @@ Body:
     "id": 19723541404,
     "category": {
         "id": 1,
-        "name": "Dog"
+        "name": "XT01ABS4OR"
     },
     "name": "Shailon",
     "photoUrls": [
@@ -67,14 +68,14 @@ Body:
     ],
     "tags": [
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 202108191,
+            "name": "engine"
         }
     ],
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Thu, 19 Aug 2021 03:53:59 GMT
+Date: Thu, 19 Aug 2021 04:09:11 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -87,7 +88,7 @@ Server: Jetty(9.2.9.v20150224)
     "id": 19723541404,
     "category": {
         "id": 1,
-        "name": "Dog"
+        "name": "XT01ABS4OR"
     },
     "name": "Shailon",
     "photoUrls": [
@@ -95,8 +96,8 @@ Server: Jetty(9.2.9.v20150224)
     ],
     "tags": [
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 202108191,
+            "name": "engine"
         }
     ],
     "status": "available"

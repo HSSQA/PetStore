@@ -49,7 +49,22 @@ public class Pet {
         ;
     }
 
+    @Test
     public void consultarPet(){
+        String petID = "19723541404";
+
+        given()
+                .contentType("application/json")
+                .log().all()
+        .when()
+                .get(uri + "/" + petID)
+        .then()
+                .log().all()
+                .statusCode(200)
+
+
+
+        ;
 
     }
 }

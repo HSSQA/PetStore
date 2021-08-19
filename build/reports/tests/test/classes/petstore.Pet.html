@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.598s</div>
+<div class="counter">4.855s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,22 @@
 </thead>
 <tr>
 <td class="success">alterarPet</td>
-<td class="success">2.598s</td>
+<td class="success">0.789s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">consultarPet</td>
+<td class="success">0.840s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">excluirPet</td>
+<td class="success">0.795s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">incluirPet</td>
+<td class="success">2.431s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,7 +102,106 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Request method:	PUT
+<pre>Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;id&quot;: 19723541404,
+    &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;XT01ABS4OR&quot;
+    },
+    &quot;name&quot;: &quot;Shailon&quot;,
+    &quot;photoUrls&quot;: [
+        &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+        {
+            &quot;id&quot;: 202108191,
+            &quot;name&quot;: &quot;engine&quot;
+        }
+    ],
+    &quot;status&quot;: &quot;available&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 19 Aug 2021 04:49:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    &quot;id&quot;: 19723541404,
+    &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;XT01ABS4OR&quot;
+    },
+    &quot;name&quot;: &quot;Shailon&quot;,
+    &quot;photoUrls&quot;: [
+        &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+        {
+            &quot;id&quot;: 202108191,
+            &quot;name&quot;: &quot;engine&quot;
+        }
+    ],
+    &quot;status&quot;: &quot;available&quot;
+}
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/19723541404
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Thu, 19 Aug 2021 04:49:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    &quot;id&quot;: 19723541404,
+    &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;XT01ABS4OR&quot;
+    },
+    &quot;name&quot;: &quot;Shailon&quot;,
+    &quot;photoUrls&quot;: [
+        &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+        {
+            &quot;id&quot;: 202108191,
+            &quot;name&quot;: &quot;engine&quot;
+        }
+    ],
+    &quot;status&quot;: &quot;available&quot;
+}
+O token é XT01ABS4OR
+Request method:	PUT
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
@@ -118,7 +232,7 @@ Body:
     &quot;status&quot;: &quot;sold&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 19 Aug 2021 04:28:36 GMT
+Date: Thu, 19 Aug 2021 04:49:25 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -145,6 +259,33 @@ Server: Jetty(9.2.9.v20150224)
     ],
     &quot;status&quot;: &quot;sold&quot;
 }
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/19723541404
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Thu, 19 Aug 2021 04:49:26 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    &quot;code&quot;: 200,
+    &quot;type&quot;: &quot;unknown&quot;,
+    &quot;message&quot;: &quot;19723541404&quot;
+}
 </pre>
 </span>
 </div>
@@ -156,7 +297,7 @@ Server: Jetty(9.2.9.v20150224)
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 19/08/2021 01:28:37</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 19/08/2021 01:49:26</p>
 </div>
 </div>
 </body>

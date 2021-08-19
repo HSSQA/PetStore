@@ -25,7 +25,7 @@ public class Pet {
      }
 
      // Incluir - Creaye - Post
-    @Test // Identifica o método ou função como m teste para o TestNG
+    @Test (priority = 0)// Identifica o método ou função como m teste para o TestNG
     public void incluirPet() throws IOException {
         String jsonBody = lerJson("db/pet1.json");
 
@@ -49,7 +49,7 @@ public class Pet {
         ;
     }
 
-    @Test
+    @Test(priority = 1)
     public void consultarPet(){
         String petID = "19723541404";
 

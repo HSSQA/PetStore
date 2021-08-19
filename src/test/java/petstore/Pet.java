@@ -48,4 +48,8 @@ public class Pet {
                 .body("tags.name", contains("sta"))
         ;
     }
+
+    public void consultarPet(){
+
+    }
 }
